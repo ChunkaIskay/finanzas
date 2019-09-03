@@ -11,11 +11,10 @@
     $obj = new Sql();	
     
     $fecha = date('Y-m-j');
-    $fecha = date('Y-m-j');
-    
+        
     $calcularFecha = strtotime('-1 day',strtotime($fecha));
-    $fechaDesde = date('Y-m-d',$calcularFecha);
-    $fechaHasta = date('Y-m-d',strtotime($fecha));
+ //   $fechaDesde = date('Y-m-d',$calcularFecha);
+   // $fechaHasta = date('Y-m-d',strtotime($fecha));
 $fechaDesde = '2019-07-01';
 $fechaHasta = '2019-07-31';
     $obj->importData($fechaDesde, $fechaHasta); 
